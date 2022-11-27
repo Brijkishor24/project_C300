@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<script>
+			window.setTimeout(function(){
+				window.location.reload();
+			},1000);
+		</script>
+		<form methods="GET" actions="/main">
+			{% if (status) == 0 %{
+			<p>If there is no one in the room</p><img src="IMAGES-5.png">
+		}}
+		{% if (status) == 1 %{
+			<p>If there is someone in the room</p><img src="IMAGES-4.png">
+		}}
+		</form>
+	</body>
+</html>
